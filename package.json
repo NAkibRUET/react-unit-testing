@@ -23,6 +23,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -41,6 +46,7 @@
   "devDependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "husky": "^4.2.5",
     "jest-enzyme": "^7.1.2",
     "moxios": "^0.4.0"
   }
